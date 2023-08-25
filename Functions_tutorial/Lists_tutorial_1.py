@@ -40,4 +40,15 @@ print("Maior:", max(hardcover_sales))
 print("Soma os números da lista:", sum(hardcover_sales))
 
 # Cálculos com ítens utilizando o slice
-print("Média dos últimos cinco ítens:", sum(hardcover_sales[:5])/5)
+print("Média dos últimos cinco ítens:", sum(hardcover_sales[:5]) / 5)
+
+# Transforma uma variável string em list após indicação do
+# caractere usado na separação dos ítens.
+flowers = ("pink primrose , hard-leaved pocket orchid, canterbury bells, sweet pea, english marigold, tiger lily, "
+           "moon orchid, bird of paradise, monkshood, globe thistle")
+print(flowers.split(","))
+
+# Converte os dados maiores que quatro (4) de uma list em uma nova list boolean.
+test_ratings = [1, 2, 3, 4, 5]
+test_liked = [i >= 4 for i in test_ratings]
+print(test_liked)
